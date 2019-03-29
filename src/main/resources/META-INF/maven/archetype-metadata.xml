@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    该文件的定义请参考：
+        http://maven.apache.org/archetype/archetype-models/archetype-descriptor/archetype-descriptor.html
+ -->
+<archetype-descriptor name="ying" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+          xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
+          http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd">
+
+    <requiredProperties>
+        <requiredProperty key="groupId">
+            <defaultValue>io.zgc</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="artifactId">
+            <defaultValue>io.zgc</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+
+    <fileSets>
+        <fileSet filtered="" packaged="" encoding="">
+            <directory/>
+            <includes/>
+            <excludes/>
+        </fileSet>
+    </fileSets>
+
+    <modules>
+        <module>
+
+        </module>
+    </modules>
+
+</archetype-descriptor>
