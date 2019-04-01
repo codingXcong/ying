@@ -1,0 +1,2 @@
+<!--spring 全局配置文件，用来控制spring特性
+    使用applicationContext.xml文件时是需要在web.xml中添加listener -->

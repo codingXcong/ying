@@ -15,6 +15,9 @@
         <requiredProperty key="artifactId">
             <defaultValue>samples</defaultValue>
         </requiredProperty>
+        <requiredProperty key="package">
+            <defaultValue>com.samples</defaultValue>
+        </requiredProperty>
     </requiredProperties>
 
     <modules>
