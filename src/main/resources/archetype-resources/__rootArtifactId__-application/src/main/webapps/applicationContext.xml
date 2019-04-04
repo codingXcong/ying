@@ -1,2 +1,14 @@
 <!--spring 全局配置文件，用来控制spring特性
     使用applicationContext.xml文件时是需要在web.xml中添加listener -->
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="classpath*:applicationContext-application.xml"/>
+    <import resource="classpath*:applicationContext-dao.xml"/>
+    <import resource="classpath*:applicationContext-manager.xml"/>
+    <import resource="classpath*:applicationContext-service.xml"/>
+
+
+</beans>

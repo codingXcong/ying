@@ -9,14 +9,10 @@
           http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd">
 
     <requiredProperties>
-        <requiredProperty key="groupId">
-            <defaultValue>io.zgc</defaultValue>
-        </requiredProperty>
-        <requiredProperty key="artifactId">
-            <defaultValue>samples</defaultValue>
-        </requiredProperty>
+        <requiredProperty key="groupId"/>
+        <requiredProperty key="artifactId"/>
         <requiredProperty key="package">
-            <defaultValue>com.samples</defaultValue>
+            <defaultValue>${groupId}.${artifactId}</defaultValue>
         </requiredProperty>
     </requiredProperties>
 
@@ -30,24 +26,6 @@
                     </includes>
                 </fileSet>
             </fileSets>
-            <fileSet filtered="true" encoding="UTF-8" packaged="true">
-                <directory>src/test/java</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-                <directory>src/test/resources</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
         </module>
         <module id="${rootArtifactId}-application" name="${rootArtifactId}-application" dir="__rootArtifactId__-application">
             <fileSets>
@@ -57,25 +35,25 @@
                         <include>**/*.*</include>
                     </includes>
                 </fileSet>
+                <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                    <directory>src/test/java</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
             </fileSets>
-            <fileSet filtered="true" encoding="UTF-8" packaged="true">
-                <directory>src/test/java</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-                <directory>src/test/resources</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
         </module>
         <module id="${rootArtifactId}-dao" name="${rootArtifactId}-dao" dir="__rootArtifactId__-dao">
             <fileSets>
@@ -85,25 +63,25 @@
                         <include>**/*.*</include>
                     </includes>
                 </fileSet>
+                <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                    <directory>src/test/java</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8" filtered="true">
+                    <directory>src/main/resources</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
             </fileSets>
-            <fileSet filtered="true" encoding="UTF-8" packaged="true">
-                <directory>src/test/java</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-                <directory>src/test/resources</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
         </module>
         <module id="${rootArtifactId}-manager" name="${rootArtifactId}-manager" dir="__rootArtifactId__-manager">
             <fileSets>
@@ -113,25 +91,25 @@
                         <include>**/*.*</include>
                     </includes>
                 </fileSet>
+                <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                    <directory>src/test/java</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
             </fileSets>
-            <fileSet filtered="true" encoding="UTF-8" packaged="true">
-                <directory>src/test/java</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-                <directory>src/test/resources</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
         </module>
         <module id="${rootArtifactId}-service" name="${rootArtifactId}-service" dir="__rootArtifactId__-service">
             <fileSets>
@@ -141,25 +119,25 @@
                         <include>**/*.*</include>
                     </includes>
                 </fileSet>
+                <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                    <directory>src/test/java</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
             </fileSets>
-            <fileSet filtered="true" encoding="UTF-8" packaged="true">
-                <directory>src/test/java</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-                <directory>src/test/resources</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
         </module>
         <module id="${rootArtifactId}-util" name="${rootArtifactId}-util" dir="__rootArtifactId__-util">
             <fileSets>
@@ -169,25 +147,25 @@
                         <include>**/*.*</include>
                     </includes>
                 </fileSet>
+                <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                    <directory>src/test/java</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
             </fileSets>
-            <fileSet filtered="true" encoding="UTF-8" packaged="true">
-                <directory>src/test/java</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-                <directory>src/test/resources</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </fileSet>
         </module>
     </modules>
 

@@ -27,7 +27,7 @@
         <!--<javaClientGenerator targetPackage="{package}.dao.mapper" targetProject="src/main/java" type="ANNOTATEDMAPPER"/>-->
 
         <!-- XML和注解的混合形式，(上面这种情况中的)SqlProvider注解方法会被XML替代-->
-        <javaClientGenerator targetPackage="{package}.dao.mapper" targetProject="src/main/java" type="MIXEDMAPPER"/>
+        <javaClientGenerator targetPackage="${package}.dao.mapper" targetProject="src/main/java" type="MIXEDMAPPER"/>
 
 
 
