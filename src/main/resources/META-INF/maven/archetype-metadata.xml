@@ -48,6 +48,12 @@
                     </includes>
                 </fileSet>
                 <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/webapps</directory>
+                    <includes>
+                        <include>**/*.*</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
                     <directory>src/test/resources</directory>
                     <includes>
                         <include>**/*.*</include>

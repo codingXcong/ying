@@ -60,7 +60,7 @@
                 <version>${mybatis.spring.version}</version>
             </dependency>
 
-            <!-- test -->
+            <!-- test begin -->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-test</artifactId>
@@ -73,6 +73,13 @@
                 <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-all</artifactId>
+                <version>${mockito.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <!-- test end -->
 
             <dependency>
                 <groupId>com.zaxxer</groupId>
@@ -86,7 +93,7 @@
                 <version>${mysql.connector.version}</version>
             </dependency>
 
-            <!-- log -->
+            <!-- log begin -->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
@@ -96,6 +103,26 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
                 <version>${logback.version}</version>
+            </dependency>
+            <!--  log end -->
+
+            <!-- apache commons begin -->
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons.codec.version}}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${commons.beanutils.version}</version>
+            </dependency>
+            <!-- apache commons end -->
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
             </dependency>
 
             <dependency>
@@ -140,6 +167,10 @@
         <hikaricp.version>3.3.1</hikaricp.version>
         <slf4j.api.version>1.8.0-beta4</slf4j.api.version>
         <logback.version>1.3.0-alpha4</logback.version>
+        <commons.codec.version>1.12</commons.codec.version>
+        <commons.beanutils.version>1.9.3</commons.beanutils.version>
+        <mockito.version>1.10.19</mockito.version>
+        <dubbo.version>2.6.6</dubbo.version>
     </properties>
 
     <build>
@@ -157,6 +188,20 @@
                     <configuration>
                         <source>1.8</source>
                         <target>1.8</target>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.mortbay.jetty</groupId>
+                    <artifactId>maven-jetty-plugin</artifactId>
+                    <version>6.1.26</version>
+                    <configuration>
+                        <connectors>
+                            <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+                                <port>9090</port>
+                                <maxIdleTime>60000</maxIdleTime>
+                            </connector>
+                        </connectors>
                     </configuration>
                 </plugin>
 
