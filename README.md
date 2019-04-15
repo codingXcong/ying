@@ -17,7 +17,9 @@ https://www.cnblogs.com/hafiz/p/5515388.html
 依赖关系：
 
 ### 使用
-mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCatalog=https://raw.githubusercontent.com/codingXcong/ying/master/archetype-catalog.xml
+mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCatalog=https://raw.githubusercontent.com/codingXcong/ying/master/archetype-catalog.xml -DarchetypeRepository=https://raw.githubusercontent.com/codingXcong/ying/master/
 
 通过mybatis-generator插件生成mapper层代码
 mybatis-generator:generate -Dmybatis.generator.configurationFile=src/main/resources/generatorConfig.xml
+
+https://www.jianshu.com/p/98a141701cc7
